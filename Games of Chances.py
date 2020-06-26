@@ -10,10 +10,10 @@ def coin_flip(guess, bet):
   
   print('Coin flipped')
 
-  if flip == 1:
+  if (flip == 1):
         print('The coin toss result was heads.')
 
-  if flip == 2:
+  if (flip == 2):
         print('The coin toss result was tails.')
 
   if (flip == 1 and guess.lower() == 'heads'):
@@ -66,10 +66,10 @@ def card(bet):
   print ('Your card is:', card1)
   print ('My card is:', card2)
 
-  if card1 < card2:
+  if (card1 < card2):
        print ('You Lost!')
        return -bet
-  elif card1 > card2:
+  elif (card1 > card2):
        print ('You win!')
        return bet
   else:
@@ -84,14 +84,14 @@ def roulette(guess, bet):
 
     print('\nRoulette')
 
-    if number == 37:
+    if (number == 37):
       print ("The wheel has landed on 00")
     else:
       print ("The winner number is:", number)
-    if number == 0 or number == 37:
+    if (number == 0 or number == 37):
       print ("You Lost!")
       return -bet
-    elif guess == number:
+    elif (guess == number):
       print ("You win big!")
       return bet * 35
     elif ((number % 2 ) == 0 and guess == "Even") or ((number % 2 ) == 1 and guess == "Odd"):
